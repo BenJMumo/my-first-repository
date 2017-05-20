@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Box Model</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+        body{
+        background-color: #eee;
+        font-family: sans-serif; /*applys to entire body*/
+        text-align: center;
+        }
+
+        div{
+
+        padding: 40px;
+            width: 400px;
+            font-size: xx-large;
+            border: 4px solid black;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        p{
+            font-size: medium
+        }
+
+        .linear{
+            background: linear-gradient(to left, blue, red);
+        }
+
+        .transparent{
+            background: linear-gradient(to right, rgba(0,0,0,0), yellow)
+        }
+
+        .multiple_stops{
+            background: linear-gradient(to left, #ff4000 1%, #40ff00 60%, #0040ff 100%);
+        }
+
+        .radial {
+            background: radial-gradient(#A9A9A9 40%, #000000 60%);
+        }
+
+        .gradint_box{
+            background: linear-gradient(to left, red, orange, yellow, green, blue);
+        }
+
+        .radial_transparent{
+            background: radial-gradient(#A9A9A9 40%, #000000 60%);
+            opacity: 0.4;
+            box-shadow: 10px 10px 5px #888888;
+        }
+        
+	</style> 
+	</head>
+	<body>
+		<div class="linear"> linear gradient</div>
+        <div class="transparent"> transparent #</div>
+        <div class="multiple_stops"> multiple stops gradient</div>
+        <div class="radial"> Radial gradient</div>
+        <div class="gradint_box"> A box with a gradient</div>
+        <div class="radial_transparent"> a box with a gradient</div>
+                <p> a radial gradient with a transparency and box shadow</p>
+
+	</body>
+</html>
